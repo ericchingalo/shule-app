@@ -5,3 +5,18 @@
 #log-in{
     float: right;
 }
+
+.info{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div > .info{
+    padding-top: 5px;
+}
+
+.link{
+    text-decoration: underline;
+    color: blue;
+}
