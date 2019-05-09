@@ -1,0 +1,11 @@
+.container{
+    padding-top: 20px;
+}
+
+.header{
+    text-align: center;
+}
+
+#sign-up{
+    float: right;
+}
