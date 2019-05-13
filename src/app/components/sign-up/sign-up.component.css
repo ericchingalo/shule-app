@@ -1,0 +1,15 @@
+.container{
+    padding-top: 20px;
+}
+
+.header{
+    text-align: center;
+}
+
+.required {
+    color: red;
+}
+
+#sign-up{
+    float: right;
+}
