@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SignUpComponent implements OnInit {
   user: FormGroup;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.user = new FormGroup({
@@ -24,6 +25,7 @@ export class SignUpComponent implements OnInit {
 
     onSubmit(user: any) {
       console.log('Submit');
+      this.router.navigate(['/home']);
     }
 
 }

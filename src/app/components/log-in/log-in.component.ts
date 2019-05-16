@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-log-in',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class LogInComponent implements OnInit {
   user: FormGroup;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.user = new FormGroup({
@@ -19,6 +20,7 @@ export class LogInComponent implements OnInit {
 
   onSubmit(user: any) {
     console.log('welcome', user.value.name);
+    this.router.navigate(['/home']);
   }
 
 }
