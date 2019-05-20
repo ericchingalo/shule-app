@@ -1,0 +1,38 @@
+.row{
+    height: 20px;
+    margin: 20px 0px;
+}
+
+.nav-image {
+    height: 50px;
+    width: 50px;
+}
+
+#welcome{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}  
+
+.contents {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.figure {
+    text-align: center;
+}
+.image-routers {
+    height: 200px;
+    width: 200px;
+}
+
+@media (max-width: 350px){
+    #welcome{
+        font-size: 14px;
+    }
+
+    .nav-image {
+        height: 50px;
+        width: 50px;   
+    }
+}

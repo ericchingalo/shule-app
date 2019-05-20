@@ -1,18 +1,40 @@
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="shule app Logo" src="../../../assets//images//ShuleAppLogo.jpg">
+<div class="container">
+  <div class="row">
+    <div id="logo" class="col-6">
+      <a [routerLink]="['/home']" ><img class="float-left nav-image" src="../../../assets//images//ShuleAppLogo.jpg"></a>
+    </div>
+    <div id="user" class="col-6">
+      <a [routerLink]="['/user']" ><img class="float-right nav-image" src="../../../assets//images//user.svg"></a>
+    </div>
+  </div>
+
+  <div class="row">
+   <div class="col-8 offset-2">
+     <p id="welcome">Welcome to Shule App</p>
+   </div>
+  </div>
+  
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-md-8 offset-md-2">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <figure class="figure">
+            <a [routerLink]="['/statistics']" routerLinkActive="router-link-active" >
+              <img src="../../../assets//images//stats.svg" class="figure-img img-fluid rounded image-routers" alt="statistics">
+            </a>
+            <figcaption class="figure-caption">View shule statistics</figcaption>
+          </figure>
+        </div>
+        <div class="col-6">
+          <figure class="figure">
+            <a [routerLink]="['/schools']" routerLinkActive="router-link-active">
+              <img src="../../../assets//images//school.svg" class="figure-img img-fluid rounded image-routers" alt="schools">
+            </a>
+            <figcaption class="figure-caption">Get schools</figcaption>
+          </figure>
+        </div>
+      </div>
+    
+    </div>
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
